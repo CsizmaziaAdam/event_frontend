@@ -10,11 +10,11 @@
 </script>
 
 <template>
-<head>
-   
-   <title>GO EVENT! - Home</title>
 
-</head>
+   
+  <div v-for="event in events">
+    {{ event.city }}
+  </div>
 <body>
     <header>
        <HeaderForm/>

@@ -11,7 +11,7 @@
           <li><a class="nav-link scrollto" >Média</a></li>
           <li><a class="nav-link scrollto" >Helyszín</a></li>
           <li><a class="nav-link scrollto" >Kapcsolat</a></li>
-     
+        
           
           <div class="navbar-buttons m-3">
               <label class="modal-btn" for="modal-toggle">Bejelentkezés/<br>Regisztráció</label>
