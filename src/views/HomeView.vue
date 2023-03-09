@@ -2,6 +2,7 @@
     import {storeToRefs} from 'pinia';
     import {useEventstore} from '../stores/index.js'
     import HeaderForm from '../components/HeaderForm.vue';
+    import HeadForm from '../components/HeadForm.vue';
 
     const {getAll} = useEventstore();
     const {events} = storeToRefs(useEventstore());
@@ -11,11 +12,7 @@
 
 <template>
 
-   
-  <div v-for="event in events">
-    {{ event.city }}
-  </div>
-<body>
+  <HeadForm/>
     <header>
        <HeaderForm/>
     </header>
@@ -319,7 +316,7 @@
   <!--<<<<<<< START: Script files >>>>>>> -->
 
 
-</body>
+
 
 
 </template>
