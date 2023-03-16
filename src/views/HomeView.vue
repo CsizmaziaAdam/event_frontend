@@ -15,7 +15,7 @@
 <template>
 <body>
     <div v-for="prop in properties">
-      {{ properties.name }}
+      {{ prop.name }}
     </div>
 
 
