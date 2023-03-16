@@ -1,7 +1,13 @@
 <script setup>
     import {storeToRefs} from 'pinia';
+
     import { useEventstore } from '../stores/index'
     //import HeaderForm from '../components/HeaderForm.vue';
+
+    import {useEventstore} from '../stores/index.js'
+    import HeaderForm from '../components/HeaderForm.vue';
+    import HeadForm from '../components/HeadForm.vue';
+
 
     const {getAll} = useEventstore();
     const {events} = storeToRefs(useEventstore());
@@ -13,10 +19,18 @@
 </script>
 
 <template>
-<body>
+
+
     <div v-for="prop in properties">
       {{ prop.name }}
     </div>
+
+
+  <HeadForm/>
+    <header>
+       <HeaderForm/>
+    </header>
+
 
 
   <!--<<<<<<< START: Welcome Screen >>>>>>> -->
@@ -317,7 +331,7 @@
   <!--<<<<<<< START: Script files >>>>>>> -->
 
 
-</body>
+
 
 
 </template>
