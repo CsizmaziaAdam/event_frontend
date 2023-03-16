@@ -1,24 +1,22 @@
 <script setup>
     import {storeToRefs} from 'pinia';
-    import {useEventstore} from '../stores/index.js'
-    import HeaderForm from '../components/HeaderForm.vue';
+    import { useEventstore } from '../stores/index'
+    //import HeaderForm from '../components/HeaderForm.vue';
 
     const {getAll} = useEventstore();
     const {events} = storeToRefs(useEventstore());
+    const {properties} = storeToRefs(useEventstore());
+    
 
     getAll();
+    getProperties();
 </script>
 
 <template>
-
-   
-  <div v-for="event in events">
-    {{ event.city }}
-  </div>
 <body>
-    <header>
-       <HeaderForm/>
-    </header>
+    <div v-for="prop in properties">
+      {{ properties.name }}
+    </div>
 
 
   <!--<<<<<<< START: Welcome Screen >>>>>>> -->
@@ -67,7 +65,7 @@
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="" alt="">
+              <img src="" alt="/public/pictures/about.jpg">
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
@@ -147,8 +145,48 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="media-item">
+              <a href="../assets/pictures/media/img_1.jpg" class="media-lightbox" data-gall="media-item">
+                <img src="../assets/pictures/media/img_1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="media-item">
+              <a href=""  class="media-lightbox" data-gall="media-item">
+                <img src="../assets/pictures/media/img_2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="media-item">
+              <a href=""  class="media-lightbox" data-gall="media-item">
+                <img src="../assets/pictures/media/img_3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="media-item">
+              <a href=""  class="media-lightbox" data-gall="media-item">
+                <img src="../assets/pictures/media/img_4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="media-item">
+              <a href=""  class="media-lightbox" data-gall="media-item">
+                <img src="../assets/pictures/media/img_5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="media-item">
               <a href="" class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
+                <img src="../assets/pictures/media/img_6.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -156,7 +194,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="media-item">
               <a href=""  class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
+                <img src="../assets/pictures/media/img_7.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -164,47 +202,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="media-item">
               <a href=""  class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="media-item">
-              <a href=""  class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="media-item">
-              <a href=""  class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="media-item">
-              <a href="" class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="media-item">
-              <a href=""  class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="media-item">
-              <a href=""  class="media-lightbox" data-gall="media-item">
-                <img src="" alt="" class="img-fluid">
+                <img src="../assets/pictures/media/img_8.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
