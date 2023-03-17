@@ -1,15 +1,13 @@
 <script setup>
     import {storeToRefs} from 'pinia';
 
-    import { useEventstore } from '../stores/index'
-    //import HeaderForm from '../components/HeaderForm.vue';
-
-    import {useEventstore} from '../stores/index.js'
+    import { useEventstore } from '../stores/index';
     import HeaderForm from '../components/HeaderForm.vue';
     import HeadForm from '../components/HeadForm.vue';
 
 
     const {getAll} = useEventstore();
+    const {getProperties} = useEventstore();
     const {events} = storeToRefs(useEventstore());
     const {properties} = storeToRefs(useEventstore());
     
@@ -22,7 +20,7 @@
 
 
     <div v-for="prop in properties">
-      {{ prop.name }}
+      {{ prop }}
     </div>
 
 
@@ -323,7 +321,7 @@
 </footer>
   <!--<<<<<<< END: Contact & Form >>>>>>> -->
 
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-square-fill text-light"></i></a>
 
 
