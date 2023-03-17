@@ -3,7 +3,7 @@
 
     import { useEventstore } from '../stores/index';
     import HeaderForm from '../components/HeaderForm.vue';
-    import HeadForm from '../components/HeadForm.vue';
+
 
 
     const {getAll} = useEventstore();
@@ -18,13 +18,6 @@
 
 <template>
 
-
-    <div v-for="prop in properties">
-      {{ prop }}
-    </div>
-
-
-  <HeadForm/>
     <header>
        <HeaderForm/>
     </header>

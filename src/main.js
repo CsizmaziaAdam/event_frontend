@@ -11,6 +11,8 @@ import "aos/dist/aos.css";
 import "./assets/css/style.css";
 import 'boxicons';
 import 'glightbox';
+import 'animate.css';
+import 'swiper';
 
 
 
