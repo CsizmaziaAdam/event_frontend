@@ -1,7 +1,8 @@
 <script setup>
     import {storeToRefs} from 'pinia';
-
     import { useEventstore } from '../stores/index';
+
+
     import HeaderForm from '../components/HeaderForm.vue';
 
 
@@ -17,7 +18,6 @@
 </script>
 
 <template>
-
     <header>
        <HeaderForm/>
     </header>
@@ -101,16 +101,16 @@
           <p>Aktuális programok</p>
         </div>
 
-        <div class="container">
+        <div class="container" v-for="prop in properties">
           <div class="row">
           
           <div class="col-lg-4 col-md-6 d-flex  mt-3 text-dark eventbox">
             <div class="card aos-init aos-animate eventcard" data-aos="fade-down">
-              <img style="height: 200px;"  class="card-img-top" alt="..."><div class="card-body" data-aos="fade-up"  >
-                      <h3></h3>
-                      class="bi bi-calendar2-week event-icons"<br>
-                      class="bi bi-pin-map event-icons"<br>
-                      class="bi bi-person-lines-fill event-icons"
+              <img style="height: 200px;" v.bind:src="{{ prop.city}}" class="card-img-top" alt="..."><div class="card-body" data-aos="fade-up"  >
+                      <h3>{{ prop.name }}</h3>
+                      <i class="bi bi-calendar2-week event-icons"></i><br>
+                      <i class="bi bi-pin-map event-icons">{{ prop.city }} {{ prop.street }} {{ prop.house_number }}.</i><br>
+                      <i class="bi bi-person-lines-fill event-icons">{{ prop.performer_name }}</i>
                       <p style="font-size: 12px;" class="event-description"></p>
                       
                 </div>
@@ -127,7 +127,7 @@
             </div>
             
           </div>
-          </div>
+        </div>
 
       </div>
     </section>
@@ -320,9 +320,4 @@
 
 
   <!--<<<<<<< START: Script files >>>>>>> -->
-
-
-
-
-
 </template>
