@@ -5,8 +5,10 @@
     <h1 class="text-center mt-2 pt-3">Önnek nincs hozzáférése ennek </h1>
     <h1 class="text-center mt-2">az oldalnak a megnyitásához</h1>
     <p class="text-center ">A weboldal hamarosan átirányítja az Ön felhasználói szintjének megfelelő oldalra! </p>
+
     <div class="text-center">
       <button class="btn btn-info text-center mt-1" style="margin-bottom: 3%;"><a class="text-black text-center" href="/userpage">Profil megtekintése</a></button>
   </div>
   </div>
+</section>
 </template>

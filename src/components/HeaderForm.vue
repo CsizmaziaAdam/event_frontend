@@ -6,12 +6,12 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto active" >Home</a></li>
-            <li><a class="nav-link scrollto" >Ismertető</a></li>
-            <li><a class="nav-link scrollto" >Programok</a></li>
-            <li><a class="nav-link scrollto" >Média</a></li>
-            <li><a class="nav-link scrollto" >Helyszín</a></li>
-            <li><a class="nav-link scrollto" >Kapcsolat</a></li>
+            <li><a class="nav-link scrollto active" href="/#welcome-screen" >Home</a></li>
+            <li><a class="nav-link scrollto" href="/#about" >Ismertető</a></li>
+            <li><a class="nav-link scrollto" href="/#actually" >Programok</a></li>
+            <li><a class="nav-link scrollto" href="/#media">Média</a></li>
+            <li><a class="nav-link scrollto" href="/#map">Helyszín</a></li>
+            <li><a class="nav-link scrollto" href="/#contact">Kapcsolat</a></li>
         
           
             <div class="navbar-buttons m-3">

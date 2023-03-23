@@ -1,11 +1,8 @@
 <script setup>
     import {storeToRefs} from 'pinia';
     import { useEventstore } from '../stores/index';
-
-
+    import loginpage from '../components/login_signup.vue';
     import HeaderForm from '../components/HeaderForm.vue';
-
-
 
     const {getAll} = useEventstore();
     const {getProperties} = useEventstore();
@@ -39,9 +36,9 @@
         <div class="carousel-content animate__animated animate__fadeInUp col-sm-4  mt-5" data-aos="fade-up">
           <p class="next-event-text">A következő esemény:</p>
           <h4></h4> 
-          <i class="bi bi-pin-map event-icons"></i>
+          <i class="bi bi-pin-map event-icons"> </i>
           <div class="d-flex flex-nowrap text-center">
-            <div class="countdown d-inline-flex text-center col-12 p-2" data-count="<%= eventArray[0].date %>">
+            <div class="countdown d-inline-flex text-center col-12 p-2" >
             <div class="order-1 countdown-block"><h3>%d</h3><h4 class="countdown-text">Nap</h4></div>
             <div class="order-2 countdown-block"><h3>%h</h3><h4 class="countdown-text">Óra</h4></div>
             <div class="order-3 countdown-block"><h3>%m</h3><h4 class="countdown-text">Perc</h4></div>
@@ -70,7 +67,7 @@
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="" alt="/public/pictures/about.jpg">
+              <img src="../assets/pictures/about.jpg" alt="/public/pictures/about.jpg">
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
@@ -206,7 +203,7 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="media-item">
-              <a href=""  class="media-lightbox" data-gall="media-item">
+              <a href="../assets/pictures/media/img_8.jpg"  class="media-lightbox" data-gall="media-item">
                 <img src="../assets/pictures/media/img_8.jpg" alt="" class="img-fluid">
               </a>
             </div>
@@ -303,7 +300,7 @@
 
 
     <!-- Login & Sign up-->
-    
+    <loginpage/>
     <!-- End: Login & Sign up -->
 
   </main><!-- End #main -->
@@ -315,6 +312,7 @@
   <!--<<<<<<< END: Contact & Form >>>>>>> -->
 
   <!-- <div id="preloader"></div> -->
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-square-fill text-light"></i></a>
 
 

@@ -15,6 +15,7 @@ import 'animate.css';
 import 'swiper';
 
 
+//import './assets/js/main';
 
 const app = createApp(App);
 
